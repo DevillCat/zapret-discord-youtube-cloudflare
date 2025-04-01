@@ -45,8 +45,6 @@
 
 - [**`service_status.bat`**](./service_status.bat) - проверка состояния служб `zapret` и `WinDivert`
 
-- [**`check_updates.bat`**](./check_updates.bat) - проверка обновлений
-
 
 ## ☑️Распространенные проблемы
 
