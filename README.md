@@ -39,7 +39,7 @@
 
 - [**`service_install.bat`**](./service_install.bat) - установка на автозапуск (как службы Windows: `zapret`, `WinDivert`), можно выбрать любую стратегию (название файла стратегии **НЕ** должно начинаться со слова `service`)
   
-- [**`service_stop.bat`**](./check_updates.bat) - остановка служб `zapret` и `WinDivert`
+- [**`service_stop.bat`**](./service_stop.bat) - остановка служб `zapret` и `WinDivert`
 
 - [**`service_remove.bat`**](./service_remove.bat) - остановка и удаление служб `zapret` и `WinDivert`
 
