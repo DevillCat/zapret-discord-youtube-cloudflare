@@ -35,7 +35,7 @@
 
 - [**`discord.bat`**](./discord.bat) - запуск со стратегией для обхода блокировки <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=15 /> Discord
 
-- [**`general.bat`**](./general.bat) - запуск со стратегией для обхода блокировок <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=15 /> Discord и <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=12 /> YouTube
+- [**`general.bat`**](./general.bat) - запуск со стратегией для обхода блокировок <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=15 /> Discord и <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=12 /> YouTube и CloudFlare
 
 - [**`service_install.bat`**](./service_install.bat) - установка на автозапуск (как службы Windows: `zapret`, `WinDivert`), можно выбрать любую стратегию (название файла стратегии **НЕ** должно начинаться со слова `service`)
   
