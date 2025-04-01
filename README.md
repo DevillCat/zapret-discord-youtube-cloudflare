@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=28 /> <a href="https://github.com/Flowseal/">Flowseal</a><a href="https://github.com/Flowseal/zapret-discord-youtube">/zapret-discord-youtube</a> <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=28 />
+# <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=28 /> <a href="https://github.com/begugla0/">begugla0</a><a href="https://github.com/begugla0/zapret-discord-youtube-cloudflare">/zapret-discord-youtube-cloudflare</a> <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=28 />
 
 *"Plug & Play"* обход блокировок <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=15 /> Discord и <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=15 /> YouTube для Windows
 
@@ -25,7 +25,7 @@
 
 ## ⚙️Использование
 
-1. Загрузите архив (zip/rar) со [страницы последнего релиза](https://github.com/Flowseal/zapret-discord-youtube/releases/latest)
+1. Загрузите архив (zip/rar) со [страницы последнего релиза](https://github.com/begugla0/zapret-discord-youtube-cloudflare/releases/latest)
 
 2. Распакуйте содержимое архива по пути, который не содержит кириллицу/спец. символы
 
@@ -38,12 +38,15 @@
 - [**`general.bat`**](./general.bat) - запуск со стратегией для обхода блокировок <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=15 /> Discord и <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=12 /> YouTube
 
 - [**`service_install.bat`**](./service_install.bat) - установка на автозапуск (как службы Windows: `zapret`, `WinDivert`), можно выбрать любую стратегию (название файла стратегии **НЕ** должно начинаться со слова `service`)
+  
+- [**`service_stop.bat`**](./check_updates.bat) - остановка служб `zapret` и `WinDivert`
 
 - [**`service_remove.bat`**](./service_remove.bat) - остановка и удаление служб `zapret` и `WinDivert`
 
 - [**`service_status.bat`**](./service_status.bat) - проверка состояния служб `zapret` и `WinDivert`
 
 - [**`check_updates.bat`**](./check_updates.bat) - проверка обновлений
+
 
 ## ☑️Распространенные проблемы
 
@@ -81,30 +84,16 @@
 
 - Отключите функцию **TUN** (Tunneling) в настройках вашего VPN
 
-### При удалении с помощью [**`service_remove.bat`**](./service_remove.bat), WinDivert остается в службах
-
-1. Узнайте название службы с помощью команды, в командной строке Windows (Win+R, `cmd`):
-
-```cmd
-driverquery | find "Divert"
-```
-
-2. Остановите и удалите службу командами:
-
-```cmd
-sc stop {название, которые вы узнали в шаге 1}
-
-sc delete {название, которые вы узнали в шаге 1}
-```
 
 ### Не нашли своей проблемы
 
-* Создайте её [тут](https://github.com/Flowseal/zapret-discord-youtube/issues)
+* Создайте её [тут](https://github.com/begugla0/zapret-discord-youtube-cloudflare/issues)
 
 ## 🗒️Добавление адресов прочих заблокированных ресурсов
 
 Список блокирующихся адресов для обхода можно расширить, добавляя их в:
 - [`list-general.txt`](./list-general.txt) для файлов `general *.bat`
+- [`ipset-cloudflare.txt`](./list-general.txt) для файлов `general *.bat`
 - [`list-discord.txt`](./list-discord.txt) для файла [`discord.bat`](./discord.bat)
 
 > [!IMPORTANT]  
@@ -114,22 +103,11 @@ sc delete {название, которые вы узнали в шаге 1}
 
 Вы можете поддержать проект, поставив :star: этому репозиторию (сверху справа этой страницы)
 
-Также, вы можете материально поддержать разработчика zapret [тут](https://github.com/bol-van/zapret/issues/590#issuecomment-2408866758)
-
-<a href="https://star-history.com/#Flowseal/zapret-discord-youtube&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date" />
- </picture>
-</a>
 
 ## ⚖️Лицензирование
 
-Проект распространяется на условиях лицензии [MIT](https://github.com/Flowseal/zapret-discord-youtube/blob/main/LICENSE.txt)
+Проект распространяется на условиях лицензии [MIT](https://github.com/begugla0/zapret-discord-youtube-cloudflare/blob/main/LICENSE)
 
-## 🩷Благодарность участникам проекта
 
-[![Contributors](https://contrib.rocks/image?repo=Flowseal/zapret-discord-youtube)](https://github.com/Flowseal/zapret-discord-youtube/graphs/contributors)
 
 💖 Отдельная благодарность разработчику [zapret](https://github.com/bol-van/zapret) - [bol-van](https://github.com/bol-van)
